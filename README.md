@@ -1,27 +1,30 @@
-# React + TypeScript + Vite
+# On the Grid page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Add an input to enter a github users username
+* Add a button to retrieve the entered users repositores
+* Modify to display the users repositories with the columns: Repo name, Language, Date created, Date updated
+* Add sorting on all columns other than language
+* Deal with errors coming from Github
 
-Currently, two official plugins are available:
+## On the User page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Add the missing User component
+* Wire up the routing to the User page
+* Reuse the input and button components to retrieve a users details
+* Display the returned users Avatar, Name and Email
 
-## Expanding the ESLint configuration
+## Submitting the solution
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Copy this repository to a repository under your own github account. (Do not fork) It should be clear how to build and run the project locally.
+TODO - figure out how to annonymise commits directly to this repo 
 
-- Configure the top-level `parserOptions` property like this:
+## Evaluation
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Your work will be evaluated for functional completeness based on the above stated goal. Additionally it will be reviewed with the following criteria in mind:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+* Following convention
+* Implementation choices
+* Correctly using types
+* Readability and code cleanliness
+
+Successful candidates will be asked to provide any insights regarding their choices and practices.
